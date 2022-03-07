@@ -23,7 +23,7 @@ int main () {
 	    break;
 	  case '/':
 	    if (b == 0) {
-	      cout << "cant devide to 0";
+	      cout << "cant devide to 0 \n";
 	    }
 	    else {
 	    cout << a << x << b << " = " << a / b << endl;
