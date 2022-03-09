@@ -14,10 +14,8 @@ int main () {
 	} 
 	int arr [n];
 	for (int i = 0; i <= n; i++) {
-		arr[i] = rand () % 10;
-	}
-	for (int j = 0; j <= n; j++) {
-		cout << arr[j] << ", ";
+		arr[i] = rand () % 100;
+		cout << arr[i] << ", ";
 	}
 	cout << endl;
 	int m;
