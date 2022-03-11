@@ -3,11 +3,7 @@
 using namespace std;
 
 int main () {
-	int n, m;
-	cout << "size of array \n";
-	cin >> n;
-	cout << "size of array \n";
-	cin >> m;
+	const int n = 5, m = 5;
 	int arr[n][m];
        	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < m; j++) {
@@ -107,19 +103,31 @@ int main () {
 		cout << endl;
 	}
 	cout << endl << "sixth triangle: " << x6 << endl;
-
+	int x7 = 0;
 	for (int i = 0; i < n; i++){
-		for (int j = 1; j < m; j++) {
-			if (i != j && i != m - 1 - j) {
+		for (int j = 0; j < m; j++) {
+			if (i < j && i < m - 1 - j) {
 				cout << arr [i][j] << " ";
+				x7 += arr [i][j];
 			}
-			else {
-				break;
-			}
+			
 		}
 		cout << endl;
-		i++;
 	}
+	cout << "seventh triangle: " << x7 << endl;
+
+	int x8 = 0;
+	for (int i = 0; i < n; i++){
+                for (int j = 0; j < m; j++) {
+			if (i > j && i > m - 1 - j) {
+				cout << arr [i][j] << " ";
+				x8 += arr [i][j];
+			}	
+		}
+		cout << endl;
+	}	
+	cout << "eighth triangle: " << x8 << endl;
+
 
 	return 0;
 
