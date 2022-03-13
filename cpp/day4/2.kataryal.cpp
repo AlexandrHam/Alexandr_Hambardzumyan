@@ -12,8 +12,8 @@ int main () {
 		cout << "Only բնա կա ն numbers \n";
 		cin >> n;
 	}
-	int x = kat (n);
-	if ( x == 1){
+	int flag = kat (n);
+	if ( flag == 1){
 		cout << "tivy kataryal e \n";
 	}
 	else {
@@ -24,11 +24,15 @@ int main () {
 }
 
 int kat (int n) {
-	int x = 1;
-	for (int i = n - 1; i > 1; i--) {
-		if (n % i == 0)
-			x = 0;
+	int y = 0, flag = 0;
+	for (int i = n - 1; i > 0; i--) {
+		if (n % i == 0) {
+			y += i;
+		}
 	}
-	return x;
+	if (y == n) {
+	flag = 1;
+	}
+	return flag;
 
 }
