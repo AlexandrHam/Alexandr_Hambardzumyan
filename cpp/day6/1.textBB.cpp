@@ -24,7 +24,7 @@ int main () {
 		n++;
 	}
 	
-	cout << n << endl;
+	cout << "Count: " << n << endl;
 
 	return 0;
 }
