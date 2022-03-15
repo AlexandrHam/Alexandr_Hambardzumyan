@@ -1,6 +1,1 @@
-<<<<<<< HEAD
-/git/test .*txt
-=======
-/git/test*.txt
->>>>>>> 6089dc94a1f8a9d882641b07e938a719fabc764d
-
+*.txt
