@@ -2,11 +2,8 @@
 #include "mylib.h"
 using namespace std;
 
-int main () {
-
-	int x = 5, y = 2;
-	int count = *sum(x, y);
-	cout << count << endl;
-
+int main (int argc, char* argv[]) {
+	
+	cout << my_atoi(argv[1]) << endl;
 	return 0;
 }

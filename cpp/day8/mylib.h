@@ -1,4 +1,4 @@
-#pragma once 
-
-int *sum (int x, int y);
-
+#ifndef mylib
+#define mylib
+int my_atoi (char* a);
+#endif
