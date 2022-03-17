@@ -10,8 +10,11 @@ int my_atoi (char* a) {
 			result = result * 10 + (a[i] - '0');
 		}
 		else {
-			break;
+			result = 0;
 		}
+	}
+	if(a[0] == '-') {
+		result = result - result * 2;
 	}
 	return result;
 
