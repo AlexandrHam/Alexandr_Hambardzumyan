@@ -23,7 +23,7 @@ int main (int argc, char* argv[]) {
 	for(int i = month; i < month + atof(argv[3]); i++) {
 		amsekan = tok (mayr, tokos);
 		mayr += amsekan;
-		cout << i << " month: " << mayr << "amd = " << amsekan << endl;
+		cout << i << "- amis: " << mayr << "amd = " << amsekan << endl;
 		if (i == 12) {
 			i = 0;
 			month = month - 12;
