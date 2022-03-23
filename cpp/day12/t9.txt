@@ -1,0 +1,6 @@
+hello
+name
+programming
+learn
+potato
+
