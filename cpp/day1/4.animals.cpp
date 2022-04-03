@@ -3,15 +3,15 @@ using namespace std;
 	
 int main () {
 	
-	int x, y, z;
+	int chicken, pig, cow;
 	cout << "How many chikens do you have? \n";
-	cin >> x;
+	cin >> chicken;
 	cout << "How many pigs do you have? \n";
-	cin >> y;
+	cin >> pig;
 	cout << "How many cows do you have? \n";
-	cin >> z;
+	cin >> cow;
 
-	int legs = ((x*2)+(y+z)*4);
+	int legs = ((chicken * 2) + (pig + cow) * 4);
 	cout << "You have " << legs << " legs of animal "<< endl;
 
 	return 0;
