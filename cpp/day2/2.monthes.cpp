@@ -3,11 +3,11 @@ using namespace std;
 
 int main () {
 	
-	int x;
+	int month;
 	int y = 0;
 	cout << "input month number \n";
-	cin >> x;
-        switch (x) {
+	cin >> month;
+        switch (month) {
 		case 1:
 	    		y = 31;
 	    	break;
